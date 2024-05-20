@@ -1,0 +1,25 @@
+<?php
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get form data
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+
+    // Format feedback data
+    $feedback = "$name|$email|$message\n";
+
+    // Save feedback to file
+    $file = fopen("feedback.txt", "a"); // Open file in append mode
+    fwrite($file, $feedback); // Write feedback data to file
+    fclose($file); // Close file
+
+    // Redirect back to the contact page after submission
+    header("Location: contact.html");
+    exit();
+} else {
+    // If the form is not submitted, redirect to the contact page
+    header("Location: contact.html");
+    exit();
+}
+?>

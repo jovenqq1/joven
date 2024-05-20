@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Feedback</title>
+    <style>
+        /* Style for feedback display */
+        .feedback {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Viewer Feedback</h1>
+        // Display feedback
+        foreach ($feedbackData as $feedback) {
+            list($name, $email, $message) = explode('|', $feedback);
+            // Output sanitized feedback data
+            echo '<div class="feedback">';
+            echo '<strong>Name:</strong> ' . sanitize_output($name) . '<br>';
+            echo '<strong>Email:</strong> ' . sanitize_output($email) . '<br>';
+            echo '<strong>Message:</strong> ' . sanitize_output($message) . '<br>';
+            echo '</div>';
+      
+    <a href="contact.html">Back to Contact Page</a>
+</body>
+</html>

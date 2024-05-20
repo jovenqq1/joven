@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="educational.html">Educational</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="contact">
+        <main>
+            <div>
+                <h1>My Contact</h1>
+                <p>You can visit me on my YouTube, TikTok, and Facebook for more information.</p>
+                <p>Please follow, like, and share.</p>
+                <p>THANKS AND GOD BLESS</p>
+            </div>
+        </main>
+    </section>
+
+    <footer>
+        <a href="https://youtube.com/@ohhven8428">
+            <img class="a-logo" src="image/youtube-square-logo-52FE5CC7E1-seeklogo.com.png" alt="YouTube logo">
+        </a>
+        <a href="https://www.tiktok.com/@jovenandog?lang=en">
+            <img class="a-logo" src="image/tiktok-logo-512.webp" alt="Tiktok Logo">
+        </a>
+        <a href="https://www.tiktok.com/@jovenandog?lang=en">
+            <img class="a-logo" src="image/facebook.webp" alt="Facebook Logo">
+        </a>
+    </footer>
+
+    <section class="feedback">
+        <div>
+            <h2>Feedback Form</h2>
+            <form id="feedbackForm" action="submit_feedback.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
